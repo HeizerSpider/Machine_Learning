@@ -1,0 +1,66 @@
+Qn 1a:
+Theta: [[-0.95454052]
+ [-7.7064982 ]] 
+ Initial offset: 10
+ Final offset: 1.0 
+ Accuracy: 96.20758483033931
+
+Qn 1b:
+Theta: [[-0.88832458]
+ [-7.67265991]] 
+ Initial offset: 11
+ Final offset: 1.0 
+ Accuracy: 96.10778443113772
+
+Qn 1c:
+How to run the script?
+In the file q1.py, there are 3 values you can adjust; a) initial theta value, b) number of epochs and c) offset value
+Save the file after adjusting these values and run 'python q1.py' and your theta value after taining as well as accuracy score will be printed.
+
+----------------------------------------------------------------------------------------------------------
+
+Qn 2: Please run the file q2.py (in CLI python q2.py) in sub directory /HW1/2
+Qn 2a:
+Tried 2 methods, method 1 as shown in the slides when each point is being calculated and added by the summation to get A and b before calculating theta
+and method 2 to use the entire matrix to calculate theta within the closed form function (Check functions closed_form and closed_form_2)
+Theta closed form method 1: [[2.4128791  2.14871954]]
+Theta closed form method 2: [[1.78157138 3.2447227 ]]
+Training error method 1: 0.3770964505139256
+Training error method 2: 0.29063028762719684
+
+Qn 2b:
+---------BATCH GRADIENT DESCENT---------
+Theta: [[0.26976806 0.24023413]]
+Training error: 5.59739472385013
+---------STOCHASTIC GRADIENT DESCENT---------
+Theta: [[0.19186481 0.21057192]]
+Training error: 5.864628714647644
+
+Qn 2c:
+---------Polynomial Regression---------
+Used closed_form_2 function within this function among the 2 functions mentioned in 2a
+Carried on with the closed form Regression using the latter method of caluclating theta with the matrix.
+Here, training error decreases up till the power x to 11, then shoots up after that. 
+Quadratic graphs fitting to the data have been plotted out, and so has the training error graph.
+
+Training Errors (x^2 onwards): [0.6342389974513087, 0.4718913203576568, 0.42208995864085097, 0.36979644131902667, 0.33384110824617425, 0.3076614385605673, 0.29432841507796587, 0.28767970948501886, 0.28623819908683684, 0.2901765195193777, 4.380204431439316, 632.2107988311799, 62.00447921705946, 24.33864785318523]
+
+----------------------------------------------------------------------------------------------------------
+
+Qn 3: Please run the file q3.py (in CLI python q3.py) in sub directory /HW1/3
+
+theta: [[-0.57939825]
+ [ 1.15033028]
+ [ 0.04934122]
+ [-1.59867896]]
+ 
+Two graphs will be displayed one after the other, tloss followed by vloss
+
+Lambda will be 10**(-1.9) on the validation set
+
+----------------------------------------------------------------------------------------------------------
+
+Qn 4: Please run the file q4.py (in CLI python q4.py) in sub directory /HW1/4
+
+The training should take some time, roughly 53 iterations but the final image is in the same folder (kmeans-image.txt)
+Please check the file q4_output.txt for centroid value update + cost update
